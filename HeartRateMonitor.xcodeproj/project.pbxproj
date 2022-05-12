@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4323691B282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323691A282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift */; };
 		5C03606F1FB90013007BC593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C03606E1FB90013007BC593 /* AppDelegate.swift */; };
 		5C0360711FB90013007BC593 /* HRMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0360701FB90013007BC593 /* HRMViewController.swift */; };
-		5C0360741FB90013007BC593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0360721FB90013007BC593 /* Main.storyboard */; };
 		5C0360761FB90013007BC593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0360751FB90013007BC593 /* Assets.xcassets */; };
 		5C0360791FB90013007BC593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0360771FB90013007BC593 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4323691A282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveiPadBatteryUpdateViewController.swift; sourceTree = "<group>"; };
 		5C03606B1FB90013007BC593 /* HeartRateMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C03606E1FB90013007BC593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0360701FB90013007BC593 /* HRMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRMViewController.swift; sourceTree = "<group>"; };
-		5C0360731FB90013007BC593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C0360751FB90013007BC593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C0360781FB90013007BC593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C03607A1FB90013007BC593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,10 +58,10 @@
 			children = (
 				5C03606E1FB90013007BC593 /* AppDelegate.swift */,
 				5C0360701FB90013007BC593 /* HRMViewController.swift */,
-				5C0360721FB90013007BC593 /* Main.storyboard */,
 				5C0360751FB90013007BC593 /* Assets.xcassets */,
 				5C0360771FB90013007BC593 /* LaunchScreen.storyboard */,
 				5C03607A1FB90013007BC593 /* Info.plist */,
+				4323691A282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift */,
 			);
 			path = HeartRateMonitor;
 			sourceTree = "<group>";
@@ -127,7 +127,6 @@
 			files = (
 				5C0360791FB90013007BC593 /* LaunchScreen.storyboard in Resources */,
 				5C0360761FB90013007BC593 /* Assets.xcassets in Resources */,
-				5C0360741FB90013007BC593 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,20 +139,13 @@
 			files = (
 				5C0360711FB90013007BC593 /* HRMViewController.swift in Sources */,
 				5C03606F1FB90013007BC593 /* AppDelegate.swift in Sources */,
+				4323691B282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C0360721FB90013007BC593 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C0360731FB90013007BC593 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C0360771FB90013007BC593 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

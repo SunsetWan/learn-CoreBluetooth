@@ -33,8 +33,6 @@ import CoreBluetooth
 
 class HRMViewController: UIViewController {
   
-  @IBOutlet weak var heartRateLabel: UILabel!
-  @IBOutlet weak var bodySensorLocationLabel: UILabel!
   var centralManager: CBCentralManager!
   var ipadProPeripheral: CBPeripheral!
   var manufacturerNameCharacteristic: CBCharacteristic!
@@ -42,15 +40,7 @@ class HRMViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Make the digits monospaces to avoid shifting when the numbers change
-    heartRateLabel.font = UIFont.monospacedDigitSystemFont(ofSize: heartRateLabel.font!.pointSize, weight: .regular)
     centralManager = CBCentralManager(delegate: self, queue: nil)
-  }
-  
-  func onHeartRateReceived(_ heartRate: Int) {
-    heartRateLabel.text = String(heartRate)
-    print("BPM: \(heartRate)")
   }
 }
 

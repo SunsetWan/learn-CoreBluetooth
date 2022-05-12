@@ -103,9 +103,11 @@ extension HRMViewController: CBPeripheralDelegate {
   func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
     guard let services = peripheral.services else { return }
 
-//    for service in services {
-//      print(service)
-//    }
+    print("=== available services START ===")
+    for service in services {
+      print(service)
+    }
+    print("=== available services END ===")
     
     let deviceInfoService = services.last!
     peripheral.discoverCharacteristics(nil, for: deviceInfoService)
@@ -140,9 +142,13 @@ extension HRMViewController: CBPeripheralDelegate {
       peripheral.readValue(for: modelNumberCharacteristic)
     }
     
-//    if manufacturerNameCharacteristic.properties.contains(.notify) {
-//      print("\(manufacturerNameCharacteristic.uuid): properties contains .notify")
-//    }
+    if manufacturerNameCharacteristic.properties.contains(.notify) {
+      print("\(manufacturerNameCharacteristic.uuid): properties contains .notify")
+    }
+    
+    if modelNumberCharacteristic.properties.contains(.notify) {
+      print("\(modelNumberCharacteristic.uuid): properties contains .notify")
+    }
 
     
 //    let heartRateMeasurementCharacteristicCBUUID = ManufacturerNameCharacteristic.uuid

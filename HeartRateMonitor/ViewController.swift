@@ -43,12 +43,12 @@ class ViewController: UIViewController {
   }
   
   private func configStackView() {
-    customCBServiceButton.setTitle("iPad", for: .normal)
+    customCBServiceButton.setTitle("iPad(Peripheral)", for: .normal)
     customCBServiceButton.setTitleColor(.black, for: .normal)
     customCBServiceButton.titleLabel?.font = .systemFont(ofSize: 28, weight: .medium)
     customCBServiceButton.addTarget(self, action: #selector(customCBServiceButtonDidPress), for: .touchUpInside)
     
-    centralDeviceButton.setTitle("iPhone", for: .normal)
+    centralDeviceButton.setTitle("iPhone(Central)", for: .normal)
     centralDeviceButton.setTitleColor(.black, for: .normal)
     centralDeviceButton.titleLabel?.font = .systemFont(ofSize: 28, weight: .medium)
     centralDeviceButton.addTarget(self, action: #selector(centralDeviceButtonDidPress), for: .touchUpInside)

@@ -37,6 +37,8 @@ final class ReceiveiPadBatteryUpdateViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.backgroundColor = .white
+    
     centralManager = CBCentralManager(delegate: self, queue: nil)
   }
 }

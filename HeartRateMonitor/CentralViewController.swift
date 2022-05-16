@@ -119,8 +119,14 @@ extension CentralViewController: CBPeripheralDelegate {
     }
     
     ipadCustomCharacteristic = characteristics.first!
-    if ipadCustomCharacteristic.properties.contains(.read) {
-      peripheral.readValue(for: ipadCustomCharacteristic)
+    if ipadCustomCharacteristic.properties.contains(.write) {
+      /// 1. `didReceiveRead` don't called
+//      peripheral.readValue(for: ipadCustomCharacteristic)
+      let helloData = "Hello".data(using: .utf8)!
+      
+      /// 2. If type is .withoutResponse, `didReceiveWrite` don't called
+      peripheral.writeValue(helloData, for: ipadCustomCharacteristic, type: .withResponse)
+      view.backgroundColor = [.red, .black, .blue, .brown, .cyan, .green].randomElement()
     }
   }
   

@@ -81,6 +81,12 @@ extension ReceiveiPadBatteryUpdateViewController: CBCentralManagerDelegate {
                       didConnect peripheral: CBPeripheral)
   {
     print("sunset iPad Pro connected!")
+    
+    /// In a real app, you typically do not pass in nil as the parameter,
+    /// because doing so returns all the services available on a peripheral device.
+    /// Because a peripheral may contain many more services than you are interested in,
+    /// discovering all of them may waste battery life and be an unnecessary use of time.
+    /// 🔗：https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/PerformingCommonCentralRoleTasks/PerformingCommonCentralRoleTasks.html#//apple_ref/doc/uid/TP40013257-CH3-SW1
     ipadProPeripheral.discoverServices(nil)
   }
 }
@@ -96,6 +102,9 @@ extension ReceiveiPadBatteryUpdateViewController: CBPeripheralDelegate {
     print("=== available services END ===")
     
     ipadBatteryService = services[2]
+    
+    /// In a real app, you typically do not pass in nil as the first parameter,
+    /// because doing so returns all the characteristics of a peripheral’s service.
     peripheral.discoverCharacteristics(nil, for: ipadBatteryService)
   }
   
@@ -110,7 +119,6 @@ extension ReceiveiPadBatteryUpdateViewController: CBPeripheralDelegate {
     }
     
     let batteryCharacteristic = characteristics.first!
-    
     if batteryCharacteristic.properties.contains(.notify) {
       print("\(batteryCharacteristic.uuid): properties contains .notify")
       peripheral.setNotifyValue(true, for: batteryCharacteristic)

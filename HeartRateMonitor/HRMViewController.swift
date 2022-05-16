@@ -118,6 +118,8 @@ extension HRMViewController: CBPeripheralDelegate {
     
 //    print(ManufacturerNameCharacteristic.properties)
     
+    /// Not all characteristics are readable.
+    /// You can determine whether a characteristic is readable by checking if its properties attribute.
     if manufacturerNameCharacteristic.properties.contains(.read) {
       print("\(manufacturerNameCharacteristic.uuid): properties contains .read")
       

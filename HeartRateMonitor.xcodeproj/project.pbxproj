@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		431CCBDA28321F5C008485A5 /* CustomCBServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431CCBD928321F5C008485A5 /* CustomCBServiceViewController.swift */; };
 		431CCBDC28325093008485A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431CCBDB28325093008485A5 /* ViewController.swift */; };
+		431CCBDE28328720008485A5 /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431CCBDD28328720008485A5 /* CentralViewController.swift */; };
 		4323691B282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323691A282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift */; };
 		5C03606F1FB90013007BC593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C03606E1FB90013007BC593 /* AppDelegate.swift */; };
 		5C0360711FB90013007BC593 /* HRMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0360701FB90013007BC593 /* HRMViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		431CCBD928321F5C008485A5 /* CustomCBServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCBServiceViewController.swift; sourceTree = "<group>"; };
 		431CCBDB28325093008485A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		431CCBDD28328720008485A5 /* CentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
 		4323691A282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveiPadBatteryUpdateViewController.swift; sourceTree = "<group>"; };
 		5C03606B1FB90013007BC593 /* HeartRateMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C03606E1FB90013007BC593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				4323691A282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift */,
 				431CCBD928321F5C008485A5 /* CustomCBServiceViewController.swift */,
 				431CCBDB28325093008485A5 /* ViewController.swift */,
+				431CCBDD28328720008485A5 /* CentralViewController.swift */,
 			);
 			path = HeartRateMonitor;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				5C0360711FB90013007BC593 /* HRMViewController.swift in Sources */,
 				5C03606F1FB90013007BC593 /* AppDelegate.swift in Sources */,
 				431CCBDA28321F5C008485A5 /* CustomCBServiceViewController.swift in Sources */,
+				431CCBDE28328720008485A5 /* CentralViewController.swift in Sources */,
 				4323691B282D5A6F004B025D /* ReceiveiPadBatteryUpdateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

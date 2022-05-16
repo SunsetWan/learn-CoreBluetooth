@@ -77,7 +77,7 @@ extension ViewController {
   }
   
   @objc func centralDeviceButtonDidPress() {
-    let vc = ReceiveiPadBatteryUpdateViewController()
+    let vc = CentralViewController()
     navigationController?.pushViewController(vc, animated: true)
   }
 }

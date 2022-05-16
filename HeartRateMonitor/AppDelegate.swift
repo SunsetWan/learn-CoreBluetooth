@@ -37,8 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let window = UIWindow()
-    window.rootViewController = UINavigationController(rootViewController: ViewController())
+    let navigationViewController = UINavigationController(rootViewController: ViewController())
+    window.rootViewController = navigationViewController
     window.makeKeyAndVisible()
+    
+    /// Everything in the window adopts the style,
+    /// including the root view controller and all presentation controllers that
+    /// display content in that window
+    window.overrideUserInterfaceStyle = .light
     self.window = window
     return true
   }

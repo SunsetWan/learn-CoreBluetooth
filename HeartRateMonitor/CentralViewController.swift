@@ -122,7 +122,7 @@ extension CentralViewController: CBPeripheralDelegate {
     if ipadCustomCharacteristic.properties.contains(.read) {
       /// 1. `didReceiveRead` don't called
       peripheral.readValue(for: ipadCustomCharacteristic)
-//      let helloData = "Hello".data(using: .utf8)!
+//      let helloData = "a".data(using: .utf8)!
       
       /// 2. If type is .withoutResponse, `didReceiveWrite` don't called
 //      peripheral.writeValue(helloData, for: ipadCustomCharacteristic, type: .withResponse)

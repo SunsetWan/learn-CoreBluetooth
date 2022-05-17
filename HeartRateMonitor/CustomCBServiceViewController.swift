@@ -79,7 +79,7 @@ class CustomCBServiceViewController: UIViewController {
   
   private func configCBCharacteristic() {
     myCharacteristic = CBMutableCharacteristic(type: myCharacteristicUUID,
-                                               properties: [.read, .writeWithoutResponse],
+                                               properties: [.read, .write],
                                                value: nil,
                                                permissions: [.readable, .writeable])
   }
@@ -112,6 +112,10 @@ extension CustomCBServiceViewController: CBPeripheralManagerDelegate {
   func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveWrite requests: [CBATTRequest]) {
     print(#function)
     view.backgroundColor = [.red, .black, .blue, .brown, .cyan, .green].randomElement()
+    if !requests.isEmpty {
+      myCharacteristic.value = requests.first!.value
+      peripheral.respond(to: requests.first!, withResult: .success)
+    }
   }
   
   func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
